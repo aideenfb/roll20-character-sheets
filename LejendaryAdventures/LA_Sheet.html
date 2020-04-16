@@ -1,0 +1,563 @@
+<!-- Basic Player Avatar Information -->
+<div class="sheet-InfoBlock">
+    <span class="sheet-h1">Basic Info</span><br>
+    <table class="sheet-BasicInfo">
+        <tr>
+            <td class="sheet-Info">
+                <span class="sheet-Label">Player:</span><br>
+                <input title="player_name" class="sheet-paInfo" type="text" name="attr_player_name" placeholder="Player Name">
+            </td>
+            <td class="sheet-Info">
+                <span class="sheet-Label">Character:</span><br>
+                <input title="character_name" class="sheet-paInfo" type="text" name="attr_character_name" placeholder="Character Name">
+            </td>
+            <td class="sheet-Info">
+                <span class="sheet-Label">Race:</span><br>
+                <input title="paRace" class="sheet-paInfo" type="text" name="attr_paRace" placeholder="Race">
+            </td>
+        </tr>
+        <tr>
+            <td class="sheet-Info">
+                <span class="sheet-Label">Order:</span><br>
+                <input title="paOrder" class="sheet-paInfo" type="text" name="attr_paOrder" placeholder="Unordered">
+            </td>
+            <td class="sheet-Info">
+                <span class="sheet-Label">Rank:</span><br>
+                <input title="paRank" class="sheet-paInfo" type="text" name="attr_paRank" placeholder="--">
+            </td>
+            <td class="sheet-Info">
+                <span class="sheet-Label">1st Ability</span><br>
+                <input title="paAbility1" class="sheet-paInfo" type="text" name="attr_paAbility1" placeholder="Not Chosen">
+            </td>
+        </tr>
+    </table>
+    <div class="sheet-Textbox1">
+        <span class="sheet-Label">Racial Capacities and Handicaps:</span><br>
+        <textarea title="paRacial" name="attr_paRacial" class="sheet-paText1" placeholder="List your racial capacities and handicaps."></textarea>
+    </div>
+    <div class="sheet-Textbox1">
+        <span class="sheet-Label">Motivations/Goals:</span><br>
+        <textarea title="paGoals" name="attr_paGoals" class="sheet-paText1" placeholder="Describe your motivations and goals"></textarea>
+    </div>
+    <div class="sheet-Textbox2a">
+        <span class="sheet-Label">Knacks:</span><br>
+        <textarea title="paKnacks" name="attr_paKnacks" class="sheet-paText2" placeholder="Enter your Knacks"></textarea>
+    </div>
+    <div class="sheet-Textbox2b">
+        <span class="sheet-Label">Quirks:</span><br>
+        <textarea title="paQuirks" name="attr_paQuirks" class="sheet-paText2" placeholder="Enter your Quirks"></textarea>
+    </div>
+</div>
+<!-- Base Ratings and Repute -->
+<div class="sheet-InfoBlock2">
+    <div class="sheet-BRBlock">
+        <span class="sheet-h1">Base Ratings</span><br>
+        <div class="sheet-paBR">
+            <span class="sheet-Label">Base Total</span><br><br>
+            <span class="sheet-Label">Current Total</span><br><br>
+            <span class="sheet-Label">**Drained</span><br>
+        </div>
+        <div class="sheet-paBR">
+            <span class="sheet-Label">Health</span><br>
+            <div class="sheet-FrameBR0"><input class="sheet-inputBox1" type="number" title="paHealth_max" name="attr_paHealth_max" value="20"></div>
+            <div class="sheet-FrameBR1"><input class="sheet-inputBox1" type="number" title="paHealth" name="attr_paHealth" value="20"></div>
+            <div class="sheet-FrameBR2"><input class="sheet-inputBox1" type="number" title="paHealthDrain" name="attr_paHealthDrain" value="0"></div>
+        </div>
+        <div class="sheet-paBR">
+            <span class="sheet-Label">Precision</span><br>
+            <div class="sheet-FrameBR0"><input class="sheet-inputBox1" type="number" title="paPrecision_max" name="attr_paPrecision_max" value="10"></div>
+            <div class="sheet-FrameBR1"><input class="sheet-inputBox1" type="number" title="paPrecision" name="attr_paPrecision" value="10"></div>
+            <div class="sheet-FrameBR2"><input class="sheet-inputBox1" type="number" title="paPrecisionDrain" name="attr_paPrecisionDrain" value="0"></div>
+        </div>
+        <div class="sheet-paBR">
+            <span class="sheet-Label">Speed</span><br>
+            <div class="sheet-FrameBR0"><input class="sheet-inputBox1" type="number" title="paSpeed_max" name="attr_paSpeed_max" value="5" step=".25"></div>
+            <div class="sheet-FrameBR1"><input class="sheet-inputBox1" type="number" title="paSpeed" name="attr_paSpeed" value="5" step=".25"></div>
+            <div class="sheet-FrameBR2"><input class="sheet-inputBox1" type="number" title="paSpeedDrain" name="attr_paSpeedDrain" value="0" step=".25"></div>
+        </div>
+        <div class="sheet-paBR">
+            <span class="sheet-Label">AEP</span><br>
+            <div class="sheet-FrameBR0"><input class="sheet-inputBox1" type="number" title="paAEP_max" name="attr_paAEP_max" value="20"></div>
+            <div class="sheet-FrameBR1"><input class="sheet-inputBox1" type="number" title="paAEP" name="attr_paAEP" value="20"></div>
+            <div class="sheet-FrameBR2"><input class="sheet-inputBox1" type="number" title="paAEPDrain" name="attr_paAEPDrain" value="0"></div>
+        </div>
+    </div>
+    <div class="sheet-ReputeBlock">
+        <span class="sheet-h1" alignment="left">Repute</span><br>
+        <div class="sheet-RepCol" style="text-align: right;">
+            <span class="sheet-Label">Repute</span><br><br>
+            <span class="sheet-Label">Dark Repute</span><br><br>
+            <span class="sheet-Label">Disrepute</span><br>
+        </div>
+        <div class="sheet-RepCol" style="text-align: left">
+            <span class="sheet-Label"> </span><br>
+            <div class="sheet-FrameRep0"><input type="number" class="sheet-inputBox1" title="paRepute" name="attr_paRepute" value="0" min="0"></div><br>
+            <div class="sheet-FrameRep1"><input type="number" class="sheet-inputBox1" title="paDarkRepute" name="attr_paDarkRepute" value="0" min="0"></div><br>
+            <div class="sheet-FrameRep2"><input type="number" class="sheet-inputBox1" title="paDisrepute" name="attr_paDisrepute" value="0" min="0"></div>
+        </div>
+    </div>
+</div>
+<!-- Disaster Avoidance -->
+<div class="sheet-InfoBlock2">
+	<span class="sheet-h1">Disaster Avoidance</span><input type="checkbox" name="attr_HideDisaster" class="sheet-toggle">
+	<div class="sheet-Container">
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">Health Avoidance:</span>
+            <input title="paAvoidHealthMod" name="attr_paAvoidHealthMod" class="sheet-paPicks" type="number" value="0">
+            <button type="roll" name="roll_DisasterHealth" style="font: 10pt; border-radius: 50%;" value="&{template:default}{{name=Avoidance - Health}}{{Partial=[[@{paHealth}]]}}{{Full=[[floor(@{paHealth}/2)]]}}{{Roll=[[d100-@{paAvoidHealthMod}+?{Situational Modifier?|0})]]}}"></button>
+        </div>
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">Precision Avoidance:</span>
+            <input title="paAvoidPrecisionMod" name="attr_paAvoidPrecisionMod" class="sheet-paPicks" type="number" value="0">
+            <button type="roll" name="roll_DisasterPrecision" style="font: 10pt; border-radius: 50%;" value="&{template:default}{{name=Avoidance - Precision}}{{Partial=[[@{paPrecision}]]}}{{Full=[[floor(@{paPrecision}/2)]]}}{{Roll=[[d100-@{paAvoidPrecisionMod}+?{Situational Modifier?|0})]]}}"></button>
+        </div>
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">Speed Avoidance:</span>
+            <input title="paAvoidSpeedMod" name="attr_paAvoidSpeedMod" class="sheet-paPicks" type="number" value="0">
+            <button type="roll" name="roll_DisasterSpeed" style="font: 10pt; border-radius: 50%;" value="&{template:default}{{name=Avoidance - Speed}}{{Partial=[[@{paSpeed}*4]]}}{{Full=[[floor(@{paSpeed}*2)]]}}{{Roll=[[d100-@{paAvoidSpeedMod}+?{Situational Modifier?|0})]]}}"></button>
+        </div>
+	</div>
+</div>
+<!-- Abilities -->
+<div class="sheet-InfoBlock2">
+    <span class="sheet-h1">Abilities and Ability Scores</span><input type="checkbox" name="attr_HideAbility" class="sheet-toggle">
+    <div class="sheet-Container">
+        <div class="sheet-AbilityTable">
+            <table>
+                <tr>
+                    <th class="sheet-AbilityTableHead">Rank</th>
+                    <th class="sheet-AbilityTableHead">Ability</th>
+                    <th class="sheet-AbilityTableHead">Score</th>
+                    <th class="sheet-AbilityTableHead">Merits</th>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">1st</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="1stAbility" name="attr_1stAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability1" name="attr_Ability1" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits1" name="attr_Merits1" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">2nd</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="2ndAbility" name="attr_2ndAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability2" name="attr_Ability2" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits2" name="attr_Merits2" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">3rd</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="3rdAbility" name="attr_3rdAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability3" name="attr_Ability3" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits3" name="attr_Merits3" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">4th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="4thAbility" name="attr_4thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability4" name="attr_Ability4" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits4" name="attr_Merits4" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">5th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="5thAbility" name="attr_5thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability5" name="attr_Ability5" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits5" name="attr_Merits5" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">6th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="6thAbility" name="attr_6thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability6" name="attr_Ability6" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits6" name="attr_Merits6" value="0" min="0"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="sheet-AbilityTable">
+            <table>
+                <tr>
+                    <th class="sheet-AbilityTableHead">Rank</th>
+                    <th class="sheet-AbilityTableHead">Ability</th>
+                    <th class="sheet-AbilityTableHead">Score</th>
+                    <th class="sheet-AbilityTableHead">Merits</th>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">7th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="7thAbility" name="attr_7thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability7" name="attr_Ability7" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits7" name="attr_Merits7" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">8th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="8thAbility" name="attr_8thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability8" name="attr_Ability8" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits8" name="attr_Merits8" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">9th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="9thAbility" name="attr_9thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability9" name="attr_Ability9" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits9" name="attr_Merits9" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">10th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="10thAbility" name="attr_10thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability10" name="attr_Ability10" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits10" name="attr_Merits10" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">11th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="11thAbility" name="attr_11thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability11" name="attr_Ability11" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits11" name="attr_Merits11" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td class="sheet-colRank">12th</td>
+                    <td class="sheet-colAbility"><input class="sheet-inputAbility" type="text" title="12thAbility" name="attr_12thAbility" value=""></td>
+                    <td class="sheet-colScore"><input type="number" class="sheet-inputBox1" title="Ability12" name="attr_Ability12" value="0" min="0"></td>
+                    <td class="sheet-colMerit"><input type="number" class="sheet-inputBox1" title="Merits12" name="attr_Merits12" value="0" min="0"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- General Merits -->
+<div class="sheet-InfoBlock2">
+    <span class="sheet-h1">General Merits:</span><input type="checkbox" name="attr_HideMerits" class="sheet-toggle">
+    <div class="sheet-Container">
+        <table class="sheet-BasicInfo">
+            <tr>
+                <td class="sheet-Info">
+                    <span class="sheet-Label">Earned:</span><br>
+                    <input type="text" class="sheet-paInfo" title="G-Merits" name="attr_G-Merits" value="0">
+                </td>
+                <td class="sheet-Info">
+                    <span class="sheet-Label">Used:</span><br>
+                    <input type="text" class="sheet-paInfo" title="U-Merits" name="attr_U-Merits" value="0">
+                </td>
+                <td class="sheet-Info">
+                    <span class="sheet-Label">Available:</span><br>
+                    <input type="text" class="sheet-paInfo" title="A-Merits" name="attr_A-Merits" value="(@{G-Merits})-(@{U-Merits})" disabled>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Equipment Picks -->
+<div class="sheet-InfoBlock2">
+    <span class="sheet-h1">Equipment Picks:</span><input type="checkbox" name="attr_HidePicks" class="sheet-toggle">
+    <div class="sheet-Container">
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">1st Ability:</span>
+            <input title="paPicks1" name="attr_paPicks1" class="sheet-paPicks" type="number" value="9">
+            <select class="sheet-AbilitySelect" name="attr_paPickTable1" value="0"><option value="0">n/a</option><option value="1">Low</option><option value="2">Middle</option><option value="3">Upper</option><option value="4">Military</option><option value="5">Magical</option></select>
+        </div>
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">2nd Ability:</span>
+            <input title="paPicks2" name="attr_paPicks2" class="sheet-paPicks" type="number" value="7">
+            <select class="sheet-AbilitySelect" name="attr_paPickTable2" value="0"><option value="0">n/a</option><option value="1">Low</option><option value="2">Middle</option><option value="3">Upper</option><option value="4">Military</option><option value="5">Magical</option></select>
+        </div>
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">3rd Ability:</span>
+            <input title="paPicks3" name="attr_paPicks3" class="sheet-paPicks" type="number" value="5">
+            <select class="sheet-AbilitySelect" name="attr_paPickTable3" value="0"><option value="0">n/a</option><option value="1">Low</option><option value="2">Middle</option><option value="3">Upper</option><option value="4">Military</option><option value="5">Magical</option></select>
+        </div><br>
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">4th Ability:</span>
+            <input title="paPicks4" name="attr_paPicks4" class="sheet-paPicks" type="number" value="3">
+            <select class="sheet-AbilitySelect" name="attr_paPickTable4" value="0"><option value="0">n/a</option><option value="1">Low</option><option value="2">Middle</option><option value="3">Upper</option><option value="4">Military</option><option value="5">Magical</option></select>
+        </div>
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">5th Ability:</span>
+            <input title="paPicks5" name="attr_paPicks5" class="sheet-paPicks" type="number" value="0">
+            <select class="sheet-AbilitySelect" name="attr_paPickTable5" value="0"><option value="0">n/a</option><option value="1">Low</option><option value="2">Middle</option><option value="3">Upper</option><option value="4">Military</option><option value="5">Magical</option></select>
+        </div>
+        <div class="sheet-Picks1">
+            <span class="sheet-Label">6th Ability:</span>
+            <input title="paPicks6" name="attr_paPicks6" class="sheet-paPicks" type="number" value="0">
+            <select class="sheet-AbilitySelect" name="attr_paPickTable6" value="0"><option value="0">n/a</option><option value="1">Low</option><option value="2">Middle</option><option value="3">Upper</option><option value="4">Military</option><option value="5">Magical</option></select>
+        </div><br>
+        <div class="sheet-Picks1">
+            <button title="Roll to determine your Bonus Item Pick Table" type="roll" value="/w gm Your Bonus Equipment Pick is from the [[ 1t[BonusPick] ]] table.">Bonus</button>
+            <input title="paPicks8" name="attr_paPicksBonus" class="sheet-paPicks" type="number" value="1" disabled>
+            <select class="sheet-AbilitySelect" name="attr_paPickTable8" value="0"><option value="0">n/a</option><option value="1">Low</option><option value="2">Middle</option><option value="3">Upper</option><option value="4">Military</option><option value="5">Magical</option></select>
+        </div><br>
+        <span class="sheet-Label">Equipment Pick Notes:</span>
+        <textarea title="paPickNotes" name="attr_paPickNotes" class="sheet-paText1" plkaceholder="Enter any Equipment pick notes you care to here, and any Order based bonus items."></textarea>
+    </div>
+</div>
+<!-- Arms Carried -->
+<div class="sheet-InfoBlock2">
+    <span class="sheet-h1">Arms Carried</span><input type="checkbox" name="attr_HideArms" class="sheet-toggle">
+    <div class="sheet-Container">
+        <div class="sheet-AbilityMods">
+            <span style="font: 10pt italic">For each of the following Abilities which your Avatar possesses please select the Ranking of that Ability (e.g. 1st thru 12th).</span><br>
+            <div class="sheet-AbilitySelect">Weapons:<select name="attr_paWeapons" class="sheet-paAbilityMod"><option value="@{Ability1}">1st</option><option value="@{Ability2}">2nd</option><option value="@{Ability3}">3rd</option><option value="@{Ability4}">4th</option><option value="@{Ability5}">5th</option><option value="@{Ability6}">6th</option></select></div>
+            <div class="sheet-AbilitySelect">Archery:<select name="attr_paArchery" class="sheet-paAbilityMod"><option value="0">n/a</option><option value="floor(@{Ability1}/10)">1st</option><option value="floor(@{Ability2}/10)">2nd</option><option value="floor(@{Ability3}/10)">3rd</option><option value="floor(@{Ability4}/10)">4th</option><option value="floor(@{Ability5}/10)">5th</option><option value="floor(@{Ability6}/10)">6th</option><option value="floor(@{Ability7}/10)">7th</option><option value="floor(@{Ability8}/10)">8th</option><option value="floor(@{Ability9}/10)">9th</option><option value="floor(@{Ability10}/10)">10th</option><option value="floor(@{Ability11}/10)">11th</option><option value="floor(@{Ability12}/10)">12th</option></select></div>
+            <div class="sheet-AbilitySelect">Chivalry:<select name="attr_paChivalry" class="sheet-paAbilityMod"><option value="0">n/a</option><option value="floor(@{Ability1}/5)">1st</option><option value="floor(@{Ability2}/5)">2nd</option><option value="floor(@{Ability3}/5)">3rd</option><option value="floor(@{Ability4}/5)">4th</option><option value="floor(@{Ability5}/5)">5th</option><option value="floor(@{Ability6}/5)">6th</option><option value="floor(@{Ability7}/5)">7th</option><option value="floor(@{Ability8}/5)">8th</option><option value="floor(@{Ability9}/5)">9th</option><option value="floor(@{Ability10}/5)">10th</option><option value="floor(@{Ability11}/5)">11th</option><option value="floor(@{Ability12}/5)">12th</option></select></div>
+            <div class="sheet-AbilitySelect">Nomadic:<select name="attr_paNomadic" class="sheet-paAbilityMod"><option value="0">n/a</option><option value="floor(@{Ability1}/10)">1st</option><option value="floor(@{Ability2}/10)">2nd</option><option value="floor(@{Ability3}/10)">3rd</option><option value="floor(@{Ability4}/10)">4th</option><option value="floor(@{Ability5}/10)">5th</option><option value="floor(@{Ability6}/10)">6th</option><option value="floor(@{Ability7}/10)">7th</option><option value="floor(@{Ability8}/10)">8th</option><option value="floor(@{Ability9}/10)">9th</option><option value="floor(@{Ability10}/10)">10th</option><option value="floor(@{Ability11}/10)">11th</option><option value="floor(@{Ability12}/10)">12th</option></select></div>
+            <div class="sheet-AbilitySelect">Physique:<select name="attr_paPhysique" class="sheet-paAbilityMod"><option value="0">n/a</option><option value="floor(@{Ability1}/10)">1st</option><option value="floor(@{Ability2}/10)">2nd</option><option value="floor(@{Ability3}/10)">3rd</option><option value="floor(@{Ability4}/10)">4th</option><option value="floor(@{Ability5}/10)">5th</option><option value="floor(@{Ability6}/10)">6th</option><option value="floor(@{Ability7}/10)">7th</option><option value="floor(@{Ability8}/10)">8th</option><option value="floor(@{Ability9}/10)">9th</option><option value="floor(@{Ability10}/10)">10th</option><option value="floor(@{Ability11}/10)">11th</option><option value="floor(@{Ability12}/10)">12th</option></select></div>
+            <div class="sheet-AbilitySelect">Savagery:<select name="attr_paSavagery" class="sheet-paAbilityMod"><option value="0">n/a</option><option value="floor(@{Ability1}/10)">1st</option><option value="floor(@{Ability2}/10)">2nd</option><option value="floor(@{Ability3}/10)">3rd</option><option value="floor(@{Ability4}/10)">4th</option><option value="floor(@{Ability5}/10)">5th</option><option value="floor(@{Ability6}/10)">6th</option><option value="floor(@{Ability7}/10)">7th</option><option value="floor(@{Ability8}/10)">8th</option><option value="floor(@{Ability9}/10)">9th</option><option value="floor(@{Ability10}/10)">10th</option><option value="floor(@{Ability11}/10)">11th</option><option value="floor(@{Ability12}/10)">12th</option></select></div>
+            <div class="sheet-AbilitySelect">Unarmed:<select name="attr_paUnarmed" class="sheet-paAbilityMod"><option value="0">n/a</option><option value="@{Ability1}">1st</option><option value="@{Ability2}">2nd</option><option value="@{Ability3}">3rd</option><option value="@{Ability4}">4th</option><option value="@{Ability5}">5th</option><option value="@{Ability6}">6th</option><option value="@{Ability7}">7th</option><option value="@{Ability8}">8th</option><option value="@{Ability9}">9th</option><option value="@{Ability10}">10th</option><option value="@{Ability11}">11th</option><option value="@{Ability12}">12th</option></select></div>
+            <!--    Unarmed:    -->
+            <input hidden disabled class="sheet-CombatMods" title="UnarmedPrecisionMods" name="attr_UnarmedPrecisionMods" type="text" value="@{paNomadic}+@{paSavagery}"><input hidden disabled class="sheet-CombatMods" title="UnarmedHarmMods" name="attr_UnarmedHarmMods" type="text" value="@{paNomadic}+@{paPhysique}+@{paSavagery}+(floor(@{paUnarmed}/5))">
+            <!--    Melee:      -->
+            <input hidden disabled class="sheet-CombatMods" title="MeleePrecisionMods" name="attr_MeleePrecisionMods" type="text" value="@{paChivalry}+@{paNomadic}+@{paSavagery}+(floor(@{paUnarmed}/10))"><input hidden disabled class="sheet-CombatMods" title="MeleeHarmMods" name="attr_MeleeHarmMods" type="text" value="@{paChivalry}+@{paNomadic}+@{paPhysique}+@{paSavagery}+({0,@{paWeapons}-100}kh1)">
+            <!--    Ranged:     -->
+            <input hidden disabled class="sheet-CombatMods" title="RangedPrecisionMods" name="attr_RangedPrecisionMods" type="text" value="@{paArchery}+@{paNomadic}+@{paSavagery}"><input hidden disabled class="sheet-CombatMods" title="RangedHarmMods" name="attr_RangedHarmMods" type="text" value="@{paArchery}+@{paNomadic}+@{paPhysique}+@{paSavagery}+({0,@{paWeapons}-100}kh1)">
+        </div>
+        <!--Unarmed Attacks-->
+        <div class="sheet-ArmsChart">
+            <span class="sheet-Label">Unarmed Attacks</span><input type="checkbox" name="attr_HideUnarmed" class="sheet-toggle">
+            <div class="sheet-Container">
+                <table border="1px">
+                    <tr>
+                        <th class="sheet-RWcol-01">Limb<br>&nbsp;</th>
+                        <th class="sheet-RWcol-02">Atks<br>&nbsp;</th>
+                        <th class="sheet-RWcol-03">Base<br>Harm</th>
+                        <th class="sheet-RWcol-04">Harm<br>Class</th>
+                        <th class="sheet-RWcol-05">Reach<br>&nbsp;</th>
+                        <th class="sheet-RWcol-06">Speed<br>&nbsp;</th>
+                        <th class="sheet-RWcol-07">Precision<br>Bonus</th>
+                        <th class="sheet-RWcol-08">Bonus<br>Harm</th>
+                        <th class="sheet-RWcol-04">Harm<br>Type</th>
+                        <th class="sheet-RWcol-09">Roll<br>&nbsp;</th>
+                    </tr>
+                </table>
+                <fieldset name="repeating_UA" class="repeating_UA">
+                    <table border="1px" style="margin-top: -1px;"><tr>
+                        <td class="sheet-RWcol-01"><input class="sheet-RW-01" title="UnarmedWpn" name="attr_UnarmedWpn" type="text" value="Fist"></td>
+                        <td class="sheet-RWcol-02"><input class="sheet-RW-02" title="UnarmedQty" name="attr_UnarmedQty" type="text" value="1"></td>
+                        <td class="sheet-RWcol-03"><input class="sheet-RW-03" title="UnarmedHarm" name="attr_UnarmedHarm" type="text" value="1d4"></td>
+                        <td class="sheet-RWcol-04"><input class="sheet-RW-04" title="HarmC" name="attr_HarmC" type="text" value="Shock"></td>
+                        <td class="sheet-RWcol-05"><input class="sheet-RW-05" title="UnarmedReach" name="attr_UnarmedReach" type="text" value="1"></td>
+                        <td class="sheet-RWcol-06"><input class="sheet-RW-06" title="UnarmedSpeed" name="attr_UnarmedSpeed" type="text" value="1"></td>
+                        <td class="sheet-RWcol-07"><input class="sheet-RW-07" title="PreciseB" name="attr_PreciseB" type="text" value="20"></td>
+                        <td class="sheet-RWcol-08"><input class="sheet-RW-08" title="HarmB" name="attr_HarmB" type="text" value="0"></td>
+                        <td class="sheet-RWcol-04"><select class="sheet-RW-8a" title="HarmT" name="attr_HarmT" value="Natural"><option value="Natural">Natural</option><option value="Preternatural">Preter-</option><option value="Supernatural">Super-</option></select></td>
+                        <td class="sheet-RWcol-09"><button type="roll" name="roll_HitUnarmed" style="font: 10pt; border-radius: 50%;" value="&{template:default}{{name=@{UnarmedWpn}}}{{ASP=[[@{paUnarmed}+@{PreciseB}+@{UnarmedPrecisionMods}+(?{Situational Adjustments?|0})]]}}{{Hit Roll=[[d100]]}}{{Harm=[[@{UnarmedHarm}+[[@{UnarmedHarmMods}]]]] @{HarmC}}}{{Bonus Harm=[[@{HarmB}]] @{HarmT}}}"></button></td>
+                    </tr></table>
+                </fieldset>
+            </div>
+        </div>
+        <!--Melee Attacks-->
+        <div class="sheet-ArmsChart">
+            <span class="sheet-Label">Melee Weapons</span><input type="checkbox" name="attr_HideMelee" class="sheet-toggle">
+            <div class="sheet-Container">
+                <table border="1px">
+                    <tr>
+                        <th class="sheet-RWcol-01">Weapon<br>&nbsp;</th>
+                        <th class="sheet-RWcol-02">Qty.<br>&nbsp;</th>
+                        <th class="sheet-RWcol-03">Base<br>Harm</th>
+                        <th class="sheet-RWcol-04">Harm<br>Class</th>
+                        <th class="sheet-RWcol-05">Reach<br>&nbsp;</th>
+                        <th class="sheet-RWcol-06">Speed<br>&nbsp;</th>
+                        <th class="sheet-RWcol-07">Precision<br>Bonus</th>
+                        <th class="sheet-RWcol-08">Bonus<br>Harm</th>
+                        <th class="sheet-RWcol-04">Harm<br>Type</th>
+                        <th class="sheet-RWcol-09">Roll<br>&nbsp;</th>
+                    </tr>
+                </table>
+                <fieldset name="repeating_Arms" class="repeating_Arms">
+                    <table border="1px" style="margin-top: -1px;"><tr>
+                        <td class="sheet-RWcol-01"><input class="sheet-RW-01" title="MeleeWpn" name="attr_MeleeWpn" type="text" value="New Weapon"></td>
+                        <td class="sheet-RWcol-02"><input class="sheet-RW-02" title="MeleeQty" name="attr_MeleeQty" type="text" value="1"></td>
+                        <td class="sheet-RWcol-03"><input class="sheet-RW-03" title="MeleeHarm" name="attr_MeleeHarm" type="text" value="1d20"></td>
+                        <td class="sheet-RWcol-04"><input class="sheet-RW-04" title="HarmC" name="attr_HarmC" type="text" value="Penetration"></td>
+                        <td class="sheet-RWcol-05"><input class="sheet-RW-05" title="MeleeReach" name="attr_MeleeReach" type="text" value="1"></td>
+                        <td class="sheet-RWcol-06"><input class="sheet-RW-06" title="MeleeSpeed" name="attr_MeleeSpeed" type="text" value="1"></td>
+                        <td class="sheet-RWcol-07"><input class="sheet-RW-07" title="PreciseB" name="attr_PreciseB" type="text" value="0"></td>
+                        <td class="sheet-RWcol-08"><input class="sheet-RW-08" title="HarmB" name="attr_HarmB" type="text" value="0"></td>
+                        <td class="sheet-RWcol-04"><select class="sheet-RW-8a" title="HarmT" name="attr_HarmT" value="Natural"><option value="Natural">Natural</option><option value="Preternatural">Preter-</option><option value="Supernatural">Super-</option></select></td>
+                        <td class="sheet-RWcol-09"><button type="roll" name="roll_HitMelee" style="font: 10pt; border-radius: 50%;" value="&{template:default}{{name=@{MeleeWpn}}}{{ASP=[[@{paWeapons}+@{PreciseB}+@{MeleePrecisionMods}+(?{Situational Adjustments?|0})]]}}{{Hit Roll=[[d100]]}}{{Harm=[[@{MeleeHarm}+[[@{MeleeHarmMods}]]]] @{HarmC}}}{{Bonus Harm=[[@{HarmB}]] @{HarmT}}}"></button></td>
+                    </tr></table>
+                </fieldset>
+            </div>
+        </div>
+        <!--Ranged Attacks-->
+        <div class="sheet-ArmsChart">
+            <span class="sheet-Label">Ranged Weapons</span><input type="checkbox" name="attr_HideRanged" class="sheet-toggle">
+            <div class="sheet-Container">
+                <table border="1px">
+                    <tr>
+                        <th class="sheet-RWcol-01">Weapon<br>&nbsp;</th>
+                        <th class="sheet-RWcol-02">Qty.<br>&nbsp;</th>
+                        <th class="sheet-RWcol-03">Base<br>Harm</th>
+                        <th class="sheet-RWcol-04">Harm<br>Class</th>
+                        <th class="sheet-RWcol-05a">Range<br>S / M / L</th>
+                        <th class="sheet-RWcol-06">Speed<br>&nbsp;</th>
+                        <th class="sheet-RWcol-07a">Precision<br>S / M / L</th>
+                        <th class="sheet-RWcol-08">Harm<br>Bonus</th>
+                        <th class="sheet-RWcol-04">Harm<br>Type</th>
+                        <th class="sheet-RWcol-09">Roll<br>&nbsp;</th>
+                    </tr>
+                </table>
+                <fieldset name="repeating_Ranged" class="repeating_Ranged">
+                    <table border="1px" style="margin-top: -1px;"><tr>
+                        <td class="sheet-RWcol-01"><input class="sheet-RW-01" title="RangedWpn" name="attr_RangedWpn" type="text" value="New Weapon"></td>
+                        <td class="sheet-RWcol-02"><input class="sheet-RW-02" title="RangedQty" name="attr_RangedQty" type="text" value="1"></td>
+                        <td class="sheet-RWcol-03"><input class="sheet-RW-03" title="RangedHarm" name="attr_RangedHarm" type="text" value="1d20"></td>
+                        <td class="sheet-RWcol-04"><input class="sheet-RW-04" title="HarmC" name="attr_HarmC" type="text" value="Penetration"></td>
+                        <td class="sheet-RWcol-05a"><input class="sheet-RW-05a" title="RangedReach" name="attr_RangedReach" type="text" value="1"></td>
+                        <td class="sheet-RWcol-06"><input class="sheet-RW-06" title="RangeSpeed" name="attr_RangedSpeed" type="text" value="1"></td>
+                        <td class="sheet-RWcol-07a"><input class="sheet-RW-07a" title="PreciseB" name="attr_PreciseB" type="text" value="0"></td>
+                        <td class="sheet-RWcol-08"><input class="sheet-RW-08" title="HarmB" name="attr_HarmB" type="text" value="0"></td>
+                        <td class="sheet-RWcol-04"><select class="sheet-RW-8a" title="HarmT" name="attr_HarmT" value="Natural"><option value="Natural">Natural</option><option value="Preternatural">Preter-</option><option value="Supernatural">Super-</option></select></td>
+                        <td class="sheet-RWcol-09"><button type="roll" name="roll_HitRanged" style="font: 10pt; border-radius: 50%;" value="&{template:default}{{name=@{RangedWpn}}}{{ASP=[[@{paWeapons}+@{PreciseB}+@{RangedPrecisionMods}+(?{Situational Adjustments?|0})]]}}{{Hit Roll=[[d100]]}}{{Harm=[[@{RangedHarm}+[[@{RangedHarmMods}]]]] @{HarmC}}}{{Bonus Harm=[[@{HarmB}]] @{HarmT}}}"></button></td>
+                    </tr></table>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Armor and Protection -->
+<div class="sheet-InfoBlock2">
+    <span class="sheet-h1">Armor & Shield / Other Protection</span><input type="checkbox" name="attr_HideArmor" class="sheet-toggle">
+    <div class="sheet-Container">
+        <table border="1px">
+            <tr>
+                <th class="sheet-RAcol-01">Armor</th>
+                <th class="sheet-RAcol-02">Protection<br>%</th>
+                <th class="sheet-RAcol-03">Harm Red.</th>
+                <th class="sheet-RAcol-04">Speed<br>Red.</th>
+                <th class="sheet-RAcol-05">Durability</th>
+                <th class="sheet-RAcol-06">Max.<br>Durability</th>
+                <th class="sheet-RAcol-07">Armor<br>Resist.</th>
+                <th class="sheet-RAcol-08">Type</th>
+            </tr>
+        </table>
+        <fieldset name="repeating_Armor" class="repeating_Armor">
+            <table border="1px" style="margin-top: -1px;">
+                <tr>
+                    <td class="sheet-RAcol-01"><input class="sheet-RA-01" title="paArmor" name="attr_paArmor" type="text" value="Armor"></td>
+                    <td class="sheet-RAcol-02"><input class="sheet-RA-02" title="paProt" name="attr_paProt" type="text" value="5">%</td>
+                    <td class="sheet-RAcol-03"><input disabled class="sheet-RA-03" title="paHarmR" name="attr_paHarmR" type="text" value="floor(@{paProt}/5)"></td>
+                    <td class="sheet-RAcol-04"><input class="sheet-RA-04" title="paSpeedR" name="attr_paSpeedR" type="text" value="0"></td>
+                    <td class="sheet-RAcol-05"><input class="sheet-RA-05" title="paDurability" name="attr_paDurability" type="text" value="20"></td>
+                    <td class="sheet-RAcol-06"><input class="sheet-RA-06" title="paDurability_max" name="attr_paDurability_max" type="text" value="20"></td>
+                    <td class="sheet-RAcol-07"><input class="sheet-RA-07" title="paDmgThreshold" name="attr_paDmgThreshold" type="text" value="0"></td>
+                    <td class="sheet-RAcol-08"><select class="sheet-RA-8a" title="paArmorT" name="attr_paArmorT" value="Natural"><option value="Natural">Natural</option><option value="Preternatural">Preter-</option><option value="Supernatural">Super-</option></select></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+</div>
+<!-- Inventory -->
+<div class="sheet-InfoBlock2">
+    <span class="sheet-h1">Wealth & Inventory</span><input type="checkbox" name="attr_HideWealth" class="sheet-toggle">
+    <div class="sheet-Container sheet-Coin">
+        <!-- Money and Jewelry -->
+        <div>
+            <span class="sheet-Label">Cash on Hand</span><input type="checkbox" name="attr_HideCash" class="sheet-toggle"><br>
+            <div class="sheet-Container">
+                <div style="display: inline-block; width: 500px ;border-right: 3px; padding-right: 8px;">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="6" style="text-align: center; font: 14pt bold italic;">Coins <span class="sheet-TotalCash">$<input disabled title="CashT" name="attr_CashT" type="text" class="sheet-CashTotal" value="@{Copper}+@{Silver}+@{Gold}"></span></th>
+                        </tr>
+                        <!-- Copper - Penny, Quip, Gil, 1 Oz. -->
+                        <tr>
+                            <th class="sheet-Coin1 sheet-TabC"><i>Copper</i></th><th class="sheet-Coin2 sheet-TabC">Pipp<br>($0.10)</th><th class="sheet-Coin2 sheet-TabC">Quip<br>($0.25)</th><th class="sheet-Coin2 sheet-TabC">Gil<br>($0.50)</th><th class="sheet-Coin2 sheet-TabC">1 Oz.<br>($1.00)</th><th class="sheet-Coin3 sheet-TabC">Total</th>
+                        </tr>
+                        <tr>
+                            <th class="sheet-Coin1 sheet-TabC">Qty.</th><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="C-Pipp" name="attr_C-Pipp" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="C-Quip" name="attr_C-Quip" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="C-Gil" name="attr_C-Gil" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="C-Oz" name="attr_C-Oz" value="0"></td><td class="sheet-Coin3">$<input disabled class="sheet-CoinVal" type="text" title="Copper" name="attr_Copper" value="(@{C-Pipp}/10)+(@{C-Quip}/4)+(@{C-Gil}/2)+@{C-Oz}"></td>
+                        </tr>
+                        <!-- Silver - Shil, Till, Bill, Stirling (1 Oz.) -->
+                        <tr>
+                            <th class="sheet-Coin1 sheet-TabS"><i>Silver</i></th><th class="sheet-Coin2 sheet-TabS">Shil<br>($1.00)</th><th class="sheet-Coin2 sheet-TabS">Till<br>($2.00)</th><th class="sheet-Coin2 sheet-TabS">Bill<br>($5.00)</th><th class="sheet-Coin2 sheet-TabS">Stirling /<br>($10.00)</th><th class="sheet-Coin3 sheet-TabS">Total</th>
+                        </tr>
+                        <tr>
+                            <th class="sheet-Coin1 sheet-TabS">Qty.</th><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="S-Shil" name="attr_S-Shil" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="S-Till" name="attr_S-Till" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="S-Bill" name="attr_S-Bill" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="S-Oz" name="attr_S-Oz" value="0"></td><td class="sheet-Coin3">$<input disabled class="sheet-CoinVal" type="text" title="Silver" name="attr_Silver" value="(@{S-Shil})+(@{S-Till}*2)+(@{S-Bill}*5)+(@{S-Oz}*10)"></td>
+                        </tr>
+                        <!-- Gold - Orb, Noble, Crown, Sovereign (1 Oz.) -->
+                        <tr>
+                            <th class="sheet-Coin1 sheet-TabG"><i>Gold</i></th><th class="sheet-Coin2 sheet-TabG">Orb<br>($50.00)</th><th class="sheet-Coin2 sheet-TabG">Noble<br>($100.00)</th><th class="sheet-Coin2 sheet-TabG">Crown<br>($250.00)</th><th class="sheet-Coin2 sheet-TabG">Sovereign /<br>($500.00)</th><th class="sheet-Coin3 sheet-TabG">Total</th>
+                        </tr>
+                        <tr>
+                            <th class="sheet-Coin1 sheet-TabG">Qty.</th><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="G-Orb" name="attr_G-Orb" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="G-Noble" name="attr_G-Noble" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="G-Crown" name="attr_G-Crown" value="0"></td><td class="sheet-Coin2"><input class="sheet-CoinNum" type="number" title="G-Oz" name="attr_G-Oz" value="0"></td><td class="sheet-Coin3">$<input disabled class="sheet-CoinVal" type="text" title="Gold" name="attr_Gold" value="(@{G-Orb}*50)+(@{G-Noble}*100)+(@{G-Crown}*250)+(@{G-Oz}*500)"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="display: inline-block; height: 100%;">
+                    <span class="sheet-Label">Wealth Notes:</span><br>
+                    <textarea title="WealthNotes" name="attr_WealthNotes" class="sheet-MoneyNote"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- Equipment & Treasure -->
+        <div>
+            <span class="sheet-Label">Equipment & Treasure</span><input type="checkbox" name="attr_HideEquip" class="sheet-toggle">
+            <div class="sheet-Container">
+                <table border="1px">
+                    <tr>
+                        <th class="sheet-EQcol-01">Item</th>
+                        <th class="sheet-EQcol-02">Qty.</th>
+                        <th class="sheet-EQcol-03">Value</th>
+                        <th class="sheet-EQcol-04">Location</th>
+                        <th class="sheet-EQcol-05">Weight</th>
+                        <th class="sheet-EQcol-06">Notes</th>
+                    </tr>
+                </table>
+                <fieldset name="repeating_Items" class="repeating_Items">
+                    <table border="1px" style="margin-top: -1px;">
+                        <tr>
+                            <td class="sheet-EQcol-01"><input class="sheet-EQ-01" title="paItem" name="attr_paItem" type="text" value="Item"></td>
+                            <td class="sheet-EQcol-02"><input class="sheet-EQ-02" title="paItemQty" name="attr_paItemQty" type="text" value="1"></td>
+                            <td class="sheet-EQcol-03"><input class="sheet-EQ-03" title="paItemValue" name="attr_paItemValue" type="text" value="$0"></td>
+                            <td class="sheet-EQcol-04"><input class="sheet-EQ-04" title="paItemLocation" name="attr_paItemLocation" type="text" value="Location"></td>
+                            <td class="sheet-EQcol-05"><input class="sheet-EQ-05" title="paItemWt" name="attr_paItemWt" type="text" value="0"></td>
+                            <td class="sheet-EQcol-06"><input class="sheet-EQ-06" title="paItemNote" name="attr_paItemNote" type="text" value="Item Notes"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Extraordinary Activations -->
+<div class="sheet-InfoBlock2">
+    <span class="sheet-h1">Extraordinary Activations & Items</span><input type="checkbox" name="attr_HideActivations" class="sheet-toggle">
+    <div class="sheet-Container">
+        <!-- Memory Tablets -->
+        <div>
+            <span class="sheet-Label">Memory Tablets</span><input type="checkbox" name="attr_HideTablets" class="sheet-toggle">
+            <div class="sheet-Container">
+                <fieldset name="repeating_memtab" class="repeating_memtab">
+                    <div class="sheet-paMemTablet">
+                        <div class="sheet-eaInputs">
+                            <button type="roll" name="roll_Activation" class="sheet-eaBtn" value="&{template:default}{{name=@{ExtAct}}}{{ASA=[[@{eaAbility}+(?{Situational Adjustments|0})]]}}{{Roll=[[d100]]}}{{AEP=[[@{EAcost}]]}}{{Time=[[@{EAtime}]]}}{{Info=@{EAdesc}}}"></button><br>
+                            <span class="sheet-subLabel">Cast:</span>
+                        </div>
+                        <div class="sheet-eaInputs">
+                            <input title="ExtAct" name="attr_ExtAct" type="text" class="sheet-eaName"><br>
+                            <span class="sheet-subLabel">Activation:</span>
+                        </div>
+                        <div class="sheet-eaInputs">
+                            <input title="EAcost" name="attr_EAcost" type="text" class="sheet-eaMed"><br>
+                            <span class="sheet-subLabel">AEP:</span>
+                        </div>
+                        <div class="sheet-eaInputs">
+                            <input title="EAtime" name="attr_EAtime" type="text" class="sheet-eaMed"><br>
+                            <span class="sheet-subLabel">Time:</span>
+                        </div>
+                        <div class="sheet-eaInputs">
+                            <input class="sheet-eaTiny" type="number" name="attr_TabletSlot" value="1" min="1" max="4"><br>
+                            <span class="sheet-subLabel">Slot:</span>
+                        </div>
+                            <input type="checkbox" name="attr_HideEA" class="sheet-toggle">
+                        <div class="sheet-Container">
+                            <div class="sheet-AbilitySelect">Ability:<select name="attr_eaAbility" class="sheet-paAbilityMod" value="@{Ability1}"><option value="@{Ability1}">1st</option><option value="@{Ability2}">2nd</option><option value="@{Ability3}">3rd</option><option value="@{Ability4}">4th</option><option value="@{Ability5}">5th</option><option value="@{Ability6}">6th</option><option value="@{Ability7}">7th</option><option value="@{Ability8}">8th</option><option value="@{Ability9}">9th</option><option value="@{Ability10}">10th</option><option value="@{Ability11}">11th</option><option value="@{Ability12}">12th</option></select></div>
+                            <div class="eaInputs">
+                                <span class="sheet-subLabel">Description:</span>
+                                <textarea name="attr_EAdesc" class="sheet-eaText"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    <div class="sheet-Container">
+        <!-- Extraordinary Items -->
+        <div>
+            <span class="sheet-Label">Extraordinary Items</span><input type="checkbox" name="attr_HideEItems" class="sheet-toggle">
+            <div class="sheet-Container">
+			Place Holder
+			</div>
+		</div>
+	</div>
+</div>
